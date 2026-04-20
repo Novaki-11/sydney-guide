@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Australia Awards — USyd S2 2026 | Pre-departure Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0a2240;
+  --navy-mid: #133155;
+  --navy-light: #1d4a7a;
+  
+  /* USyd Brand Ochre / Orange Colors */
+  --usyd-orange: #E64626;
+  --usyd-orange-light: #f48a73;
+  --usyd-orange-pale: #fdeeea;
+
+  --teal: #0e7c6b;
+  --teal-light: #e0f4f0;
+  --red: #c0392b;
+  --red-light: #fdecea;
+  --green: #1a7a4a;
+  --green-light: #e6f7ee;
+  
+  --bg: #f7f5f0;
+  --white: #ffffff;
+  --text: #1a1a2e;
+  --text-mid: #4a5568;
+  --text-muted: #8a94a8;
+  --border: #e2ddd6;
+  
+  --sidebar-w: 260px;
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* ──────────── SIDEBAR ──────────── */
+.sidebar {
+  position: fixed;
+  left: 0; top: 0; bottom: 0;
+  width: var(--sidebar-w);
+  background: var(--navy);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.sidebar-brand {
+  padding: 28px 24px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.brand-flag {
+  display: flex; gap: 3px; margin-bottom: 12px;
+}
+.flag-bar {
+  height: 4px; border-radius: 2px;
+}
+
+.brand-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 17px;
+  color: var(--white);
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+.brand-sub {
+  font-size: 11px;
+  color: var(--usyd-orange-light);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.nav {
+  flex: 1;
+  padding: 16px 0;
+}
+
+.nav-group {
+  margin-bottom: 4px;
+}
+
+.nav-group-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  padding: 10px 24px 4px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 24px;
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 400;
+  transition: all 0.15s;
+  border-left: 3px solid transparent;
+  position: relative;
+}
+
+.nav-link:hover {
+  background: rgba(255,255,255,0.06);
+  color: var(--white);
+  border-left-color: rgba(230, 70, 38, 0.5);
+}
+
+.nav-link.active {
+  background: rgba(230, 70, 38, 0.12);
+  color: var(--usyd-orange-light);
+  border-left-color: var(--usyd-orange);
+  font-weight: 500;
+}
+
+.nav-icon {
+  font-size: 14px;
+  width: 18px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.sidebar-footer {
+  padding: 16px 24px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  font-size: 11.5px;
+  color: rgba(255,255,255,0.3);
+  line-height: 1.6;
+}
+
+/* ──────────── MAIN ──────────── */
+.main {
+  margin-left: var(--sidebar-w);
+  min-height: 100vh;
+}
+
+/* ──────────── HERO ──────────── */
+.hero {
+  background: var(--navy);
+  padding: 60px 56px 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  right: -60px; top: -60px;
+  width: 380px; height: 380px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(230, 70, 38, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(230, 70, 38, 0.2);
+  color: var(--usyd-orange-light);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(230, 70, 38, 0.3);
+}
+
+.hero h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 38px;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 12px;
+  max-width: 560px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--usyd-orange-light);
+}
+
+.hero-sub {
+  color: rgba(255,255,255,0.6);
+  font-size: 15px;
+  max-width: 480px;
+  margin-bottom: 32px;
+}
+
+.hero-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.75);
+}
+
+/* ──────────── CONTENT ──────────── */
+.content {
+  padding: 40px 56px 80px;
+}
+
+.section {
+  margin-bottom: 56px;
+  scroll-margin-top: 80px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.section-icon {
+  width: 38px; height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  flex-shrink: 0;
+}
+
+.section-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px;
+  color: var(--navy);
+  font-weight: 400;
+}
+
+/* ──────────── CARDS ──────────── */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.cards-2 { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.cards-3 { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+}
+
+.card-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card-title-icon {
+  font-size: 16px;
+}
+
+/* ──────────── LIST ITEMS ──────────── */
+.item-list { display: flex; flex-direction: column; gap: 6px; }
+
+.item {
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+}
+
+.item-dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--usyd-orange);
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+
+.item-text {
+  font-size: 13px;
+  color: var(--text-mid);
+  line-height: 1.55;
+}
+
+.item-text strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.item-text a {
+  color: var(--navy-light);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(29,74,122,0.25);
+}
+
+.item-text a:hover { border-bottom-color: var(--navy-light); }
+
+/* ──────────── BADGE ──────────── */
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+}
+.badge-navy { background: #e8edf5; color: var(--navy); }
+.badge-usyd-orange { background: var(--usyd-orange-pale); color: #a12c14; }
+.badge-teal { background: var(--teal-light); color: var(--teal); }
+.badge-red { background: var(--red-light); color: var(--red); }
+.badge-green { background: var(--green-light); color: var(--green); }
+
+/* ──────────── ALERT BOX ──────────── */
+.alert {
+  border-radius: var(--radius-sm);
+  padding: 13px 16px;
+  font-size: 13px;
+  line-height: 1.6;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-top: 12px;
+}
+.alert-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+.alert-text { color: var(--text-mid); }
+.alert-text strong { color: var(--text); font-weight: 600; }
+
+.alert-warning { background: var(--usyd-orange-pale); border-left: 3px solid var(--usyd-orange); }
+.alert-danger  { background: var(--red-light);    border-left: 3px solid var(--red); }
+.alert-info    { background: #eef4fb;             border-left: 3px solid var(--navy-light); }
+.alert-success { background: var(--green-light);  border-left: 3px solid var(--green); }
+
+/* ──────────── TIMELINE ──────────── */
+.timeline { display: flex; flex-direction: column; gap: 0; }
+
+.tl-item {
+  display: flex;
+  gap: 16px;
+}
+
+.tl-spine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  padding-top: 4px;
+}
+
+.tl-dot {
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--usyd-orange);
+  border: 2px solid var(--white);
+  box-shadow: 0 0 0 2px var(--usyd-orange);
+  flex-shrink: 0;
+}
+
+.tl-dot.done { background: var(--teal); box-shadow: 0 0 0 2px var(--teal); }
+
+.tl-line {
+  width: 2px;
+  flex: 1;
+  background: var(--border);
+  margin: 4px 0;
+  min-height: 20px;
+}
+
+.tl-body {
+  padding-bottom: 24px;
+  flex: 1;
+}
+
+.tl-date {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--usyd-orange);
+  margin-bottom: 2px;
+}
+
+.tl-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.tl-desc {
+  font-size: 13px;
+  color: var(--text-mid);
+  line-height: 1.5;
+}
+
+/* ──────────── PRICE TABLE ──────────── */
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.price-table th {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.price-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+  vertical-align: top;
+}
+
+.price-table tr:last-child td { border-bottom: none; }
+.price-table td:last-child { font-weight: 600; color: var(--navy); text-align: right; white-space: nowrap; }
+.price-table tr:hover td { background: var(--bg); }
+
+/* ──────────── CONTACT CARDS ──────────── */
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.contact-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+}
+
+.contact-card.primary::before { background: var(--navy); }
+.contact-card.usyd-orange::before { background: var(--usyd-orange); }
+.contact-card.teal::before    { background: var(--teal); }
+.contact-card.red::before     { background: var(--red); }
+
+.contact-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.contact-role {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+/* FIXED: Prevent text overflow for long emails/links */
+.contact-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 12.5px;
+  color: var(--text-mid);
+  margin-bottom: 4px;
+}
+
+.contact-text {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.contact-row-icon { font-size: 13px; flex-shrink: 0; margin-top: 1px; }
+
+/* ──────────── CHECKLIST ──────────── */
+.checklist { display: flex; flex-direction: column; gap: 10px; }
+
+.check-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 13px 16px;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.check-item:hover { border-color: var(--usyd-orange); }
+
+.check-box {
+  width: 20px; height: 20px;
+  border-radius: 5px;
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+  margin-top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+  font-size: 11px;
+  color: transparent;
+}
+
+.check-item.checked .check-box {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: white;
+}
+
+.check-item.checked .check-label { text-decoration: line-through; color: var(--text-muted); }
+
+.check-label {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.check-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* ──────────── SUBURB GRID ──────────── */
+.suburb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 10px;
+}
+
+.suburb-col {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+}
+
+.suburb-col-title {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--navy);
+  margin-bottom: 7px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.suburb-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.suburb-tag {
+  font-size: 12px;
+  color: var(--text-mid);
+}
+
+/* ──────────── STAT CARDS ──────────── */
+.stats { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; margin-bottom: 20px; }
+
+.stat {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  text-align: center;
+}
+
+.stat-value {
+  font-family: 'DM Serif Display', serif;
+  font-size: 28px;
+  color: var(--navy);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stat-label { font-size: 12px; color: var(--text-muted); }
+
+/* ──────────── DIVIDER ──────────── */
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: 28px 0;
+}
+
+/* ──────────── PROGRESS STEP ──────────── */
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.step-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 5px 12px 5px 8px;
+  font-size: 12.5px;
+  color: var(--text-mid);
+}
+
+.step-num {
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ──────────── SCROLLBAR ──────────── */
+.sidebar::-webkit-scrollbar { width: 4px; }
+.sidebar::-webkit-scrollbar-track { background: transparent; }
+.sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
+
+/* ──────────── RESPONSIVE ──────────── */
+@media (max-width: 860px) {
+  :root { --sidebar-w: 0px; }
+  .sidebar { display: none; }
+  .main { margin-left: 0; }
+  .hero, .content { padding-left: 24px; padding-right: 24px; }
+  .hero h1 { font-size: 28px; }
+}
+
+/* ──────────── FADE-IN ──────────── */
+.section {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeUp 0.45s forwards;
+}
+
+.section:nth-child(1) { animation-delay: 0.05s; }
+.section:nth-child(2) { animation-delay: 0.12s; }
+.section:nth-child(3) { animation-delay: 0.19s; }
+.section:nth-child(4) { animation-delay: 0.24s; }
+.section:nth-child(5) { animation-delay: 0.28s; }
+.section:nth-child(6) { animation-delay: 0.32s; }
+.section:nth-child(7) { animation-delay: 0.36s; }
+.section:nth-child(8) { animation-delay: 0.40s; }
+
+@keyframes fadeUp {
+  to { opacity: 1; transform: none; }
+}
+</style>
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="sidebar-brand">
+    <div class="brand-flag">
+      <div class="flag-bar" style="width:28px;background:#00008B;"></div>
+      <div class="flag-bar" style="width:8px;background:#CC0000;"></div>
+      <div class="flag-bar" style="width:20px;background:#00247D;"></div>
+    </div>
+    <div class="brand-title">Australia Awards<br>University of Sydney</div>
+    <div class="brand-sub">Semester 2, 2026</div>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-group">
+      <div class="nav-group-label">Tổng quan</div>
+      <a href="#timeline" class="nav-link active"><span class="nav-icon">📅</span> Timeline</a>
+      <a href="#checklist" class="nav-link"><span class="nav-icon">✅</span> Final Checklist</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Khi đến Úc</div>
+      <a href="#airport" class="nav-link"><span class="nav-icon">✈️</span> Đón sân bay</a>
+      <a href="#arrival-session" class="nav-link"><span class="nav-icon">🎓</span> Arrival Session</a>
+      <a href="#finance" class="nav-link"><span class="nav-icon">💰</span> Tài chính</a>
+      <a href="#oshc" class="nav-link"><span class="nav-icon">🏥</span> Bảo hiểm OSHC</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Sinh hoạt</div>
+      <a href="#accommodation" class="nav-link"><span class="nav-icon">🏠</span> Chỗ ở</a>
+      <a href="#family" class="nav-link"><span class="nav-icon">👨‍👩‍👧</span> Đưa gia đình</a>
+      <a href="#campus" class="nav-link"><span class="nav-icon">🏛️</span> Campus & IAP</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Khác</div>
+      <a href="#documents" class="nav-link"><span class="nav-icon">📄</span> Hồ sơ</a>
+      <a href="#contacts" class="nav-link"><span class="nav-icon">📞</span> Liên hệ</a>
+    </div>
+  </nav>
+
+  <div class="sidebar-footer">
+    International Sponsorships<br>
+    +61 2 8627 5449<br>
+    australiaawards@sydney.edu.au<br>
+    T2–T6, 9AM–5PM
+  </div>
+</aside>
+
+<main class="main">
+
+  <div class="hero">
+    <div class="hero-tag">🇦🇺 Pre-departure Guide</div>
+    <h1>Chào mừng đến<br><em>University of Sydney</em></h1>
+    <p class="hero-sub">Tài liệu hướng dẫn toàn diện dành cho Australia Awards Scholars — Semester 2, 2026. Đọc kỹ trước khi lên đường.</p>
+    <div class="hero-chips">
+      <div class="chip">📍 Australia Awards Scholar</div>
+      <div class="chip">🏛️ The University of Sydney</div>
+      <div class="chip">📆 S2 2026</div>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <div class="section" id="timeline">
+      <div class="section-header">
+        <div class="section-icon" style="background:#eef4fb;">📅</div>
+        <h2 class="section-title">Timeline quan trọng</h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-line"></div></div>
+          <div class="tl-body">
+            <div class="tl-date">Ngay bây giờ — trước khi lên đường</div>
+            <div class="tl-label">Điền Booking Spreadsheet</div>
+            <div class="tl-desc">File đính kèm trong email pre-departure. Xác nhận lịch bay, đăng ký đón sân bay & đặt chỗ ở tạm.</div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-line"></div></div>
+          <div class="tl-body">
+            <div class="tl-date">Trước khi xuất phát</div>
+            <div class="tl-label">Chuẩn bị tài liệu & tiền mặt</div>
+            <div class="tl-desc">Mang bản gốc/công chứng hồ sơ học vấn. Chuẩn bị đủ tiền mặt AUD cho 1–3 tuần đầu.</div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-body">
+            <div class="tl-date">Ngày đến Sydney</div>
+            <div class="tl-label">Đón sân bay + Check-in homestay tạm</div>
+            <div class="tl-desc">Bật Wi-Fi miễn phí tại sân bay. Tài xế 2Airport liên hệ qua WhatsApp.</div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-body">
+            <div class="tl-date">Sau khi đến — tuần đầu</div>
+            <div class="tl-label">Mở tài khoản Commonwealth Bank</div>
+            <div class="tl-desc">Mang confirmation letter đến buổi Arrival Information Session. Stipend và Establishment Allowance sẽ chuyển vào tài khoản này.</div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-body">
+            <div class="tl-date">Bắt buộc sau khi đến</div>
+            <div class="tl-label">Arrival Information Session</div>
+            <div class="tl-desc">Level 4, Jane Foss Russell Building (entrance via City Road). Mang passport, visa, boarding pass. Nhận OSHC, Arrival Pack, Establishment Allowance info.</div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-body">
+            <div class="tl-date">29–30 tháng 6, 2026</div>
+            <div class="tl-label">Australia Awards Orientation</div>
+            <div class="tl-desc">2 ngày giới thiệu chính sách học bổng, điều kiện & quyền lợi. Gặp Faculty, sinh viên khác và staff.</div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-body">
+            <div class="tl-date">1 tháng 7 – 24 tháng 7, 2026</div>
+            <div class="tl-label">ASAS — Advanced Skills for Academic Success</div>
+            <div class="tl-desc">Chương trình học thuật cường độ cao do CET (Centre for English Teaching) tổ chức. Bao gồm viết học thuật, đọc, tư duy phản biện, thuyết trình, làm việc nhóm, và kỹ năng IT.</div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-spine"><div class="tl-dot"></div></div>
+          <div class="tl-body">
+            <div class="tl-date">Sau IAP</div>
+            <div class="tl-label">Bắt đầu khoá học chính thức</div>
+            <div class="tl-desc">Bắt đầu chương trình học thuật của bạn tại cơ sở được chỉ định. Chúc bạn học tốt! 🎓</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section" id="airport">
+      <div class="section-header">
+        <div class="section-icon" style="background:#eef4fb;">✈️</div>
+        <h2 class="section-title">Đón sân bay & Chỗ ở tạm</h2>
+      </div>
+
+      <div class="cards cards-2">
+        <div class="card">
+          <div class="card-title"><span class="card-title-icon">🚐</span> Dịch vụ đón sân bay</div>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text"><strong>Miễn phí</strong> cho scholar — gia đình đi kèm trả riêng</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Tài xế từ <strong>2Airport</strong> — bật Wi-Fi (miễn phí ở sân bay) để nhận liên lạc qua <strong>WhatsApp</strong></div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Nếu cần gọi điện: nhờ nhân viên sân bay hỗ trợ miễn phí hoặc ra quầy help desk</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Đổi tiền: quầy exchange tại sân bay và trong thành phố — chỉ chấp nhận <strong>AUD</strong></div></div>
+          </div>
+          <div class="alert alert-warning" style="margin-top:12px;">
+            <span class="alert-icon">⚠️</span>
+            <div class="alert-text"><strong>Đổi lịch bay:</strong> Liên hệ ngay <strong>Cecilia Faraizi: +61 403 659 884</strong>. Nếu không báo trước → tự túc di chuyển và chịu phí chỗ ở từ ngày đặt ban đầu.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title"><span class="card-title-icon">🏠</span> Homestay tạm thời</div>
+          <span class="badge badge-navy">Placement fee: $350 cho tất cả</span>
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Loại phòng</th>
+                <th>Bữa ăn</th>
+                <th>Giá/tuần</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Twin share (WC chung)</td>
+                <td>2 bữa/ngày, 3 bữa cuối tuần</td>
+                <td>$370</td>
+              </tr>
+              <tr>
+                <td>Single room (WC chung)</td>
+                <td>2 bữa/ngày, 3 bữa cuối tuần</td>
+                <td>$410</td>
+              </tr>
+              <tr>
+                <td>Self-catered single</td>
+                <td>Không có (số lượng hạn chế)</td>
+                <td>$355</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="alert alert-danger" style="margin-top:10px;">
+            <span class="alert-icon">🚫</span>
+            <div class="alert-text"><strong>Không hoàn tiền</strong> nếu check-out sớm hơn ngày đặt.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="arrival-session">
+      <div class="section-header">
+        <div class="section-icon" style="background:var(--usyd-orange-pale);">🎓</div>
+        <h2 class="section-title">Arrival Information Session</h2>
+      </div>
+
+      <div class="alert alert-danger" style="margin-bottom:16px;">
+        <span class="alert-icon">❗</span>
+        <div class="alert-text"><strong>Bắt buộc tham dự.</strong> Mang theo: passport, visa và boarding pass. Ngày giờ cụ thể sẽ có trong email pre-departure.</div>
+      </div>
+
+      <div class="cards cards-2">
+        <div class="card">
+          <div class="card-title">📍 Địa điểm</div>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text"><strong>Level 4, Jane Foss Russell Building</strong><br>Entrance via City Road, University of Sydney</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">📦 Bạn sẽ nhận được</div>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text"><strong>Arrival Pack</strong> — thông tin về trường và học bổng</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text"><strong>Establishment Allowance</strong> information</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text"><strong>OSHC membership</strong> (Bupa) information</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-info" style="margin-top:12px;">
+        <span class="alert-icon">🏦</span>
+        <div class="alert-text"><strong>Trước buổi này:</strong> Mở tài khoản <strong>Commonwealth Bank</strong> và mang confirmation letter đến buổi briefing.</div>
+      </div>
+    </div>
+
+    <div class="section" id="finance">
+      <div class="section-header">
+        <div class="section-icon" style="background:var(--usyd-orange-pale);">💰</div>
+        <h2 class="section-title">Tài chính sau khi đến</h2>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-value">$5,000</div>
+          <div class="stat-label">Establishment Allowance (AUD)</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">2 tuần</div>
+          <div class="stat-label">Chu kỳ trả Stipend</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">1–3 tuần</div>
+          <div class="stat-label">Thời gian nhận lần đầu</div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <span class="badge badge-navy">Stipend (CLE)</span>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text">Tính từ ngày đến Úc, tối đa <strong>14 ngày</strong> trước ngày bắt đầu học bổng</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Chuyển vào tài khoản ngân hàng Úc <strong>mỗi 2 tuần</strong></div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text" style="color:var(--red);">Lần đầu có thể chờ <strong>1–3 tuần</strong> sau khi đến</div></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="badge badge-green">Establishment Allowance</span>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text"><strong>$5,000 AUD</strong> một lần duy nhất</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Khoảng <strong>1 tuần</strong> sau khi đến mới vào tài khoản</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Dùng để chi trả chỗ ở tạm và chi phí thiết lập ban đầu</div></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="badge badge-usyd-orange">Tiền mặt & ATM</span>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text">Chỉ chấp nhận <strong>AUD</strong> — đổi USD tại sân bay hoặc ngân hàng</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">ATM có mặt khắp nơi ở Sydney</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Ngân hàng mở cửa <strong>Thứ 2–Thứ 6</strong></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-warning" style="margin-top:14px;">
+        <span class="alert-icon">💡</span>
+        <div class="alert-text"><strong>Lưu ý quan trọng:</strong> Mang đủ tiền mặt cho ít nhất 1–3 tuần đầu, đặc biệt nếu đến vào cuối tuần khi ngân hàng đóng cửa.</div>
+      </div>
+    </div>
+
+    <div class="section" id="oshc">
+      <div class="section-header">
+        <div class="section-icon" style="background:var(--green-light);">🏥</div>
+        <h2 class="section-title">Bảo hiểm y tế — OSHC</h2>
+      </div>
+
+      <div class="cards cards-2">
+        <div class="card">
+          <span class="badge badge-green">Cho bản thân</span>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text">Trường <strong>trả toàn bộ</strong> phí OSHC single cover cho bạn</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Nhà cung cấp: <strong>Bupa</strong> — quyền lợi tương đương Medicare của Úc</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Nhận thông tin thẻ OSHC tại Arrival Information Session</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Chi tiết: <a href="https://www.bupa.com.au/health-insurance/oshc" target="_blank">bupa.com.au/health-insurance/oshc</a></div></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="badge badge-usyd-orange">Cho gia đình</span>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text">Học bổng <strong>KHÔNG</strong> bao gồm OSHC cho người thân</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Tự nâng cấp lên <strong>family cover</strong> hoặc mua cover riêng cho từng người</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Phải tự sắp xếp trước khi gia đình sang Úc</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="accommodation">
+      <div class="section-header">
+        <div class="section-icon" style="background:var(--teal-light);">🏠</div>
+        <h2 class="section-title">Chỗ ở dài hạn</h2>
+      </div>
+
+      <div class="alert alert-warning" style="margin-bottom:18px;">
+        <span class="alert-icon">⚠️</span>
+        <div class="alert-text"><strong>Chưa nên đặt chỗ ở dài hạn trước khi đến.</strong> Theo luật Úc, bạn phải xem nhà trực tiếp trước khi ký hợp đồng thuê (ngoại trừ on-campus). Đợi đến khi đến Sydney rồi tìm.</div>
+      </div>
+
+      <h3 style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:12px;">On-campus</h3>
+      <div class="cards">
+        <div class="card">
+          <div class="card-title">Darlington House</div>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text">12 căn hộ tự nấu, nam/nữ riêng biệt</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text" style="color:var(--navy);font-weight:600;">Từ $335/tuần</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">Queen Mary Building</div>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text">Phòng đơn, sky lounge, gym, phòng nhạc, WC chung</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text" style="color:var(--navy);font-weight:600;">Từ $374/tuần (gồm 10GB internet & tiện ích)</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">Regiment Building <span style="font-size:11px;color:var(--teal);font-weight:500;">(Mới nhất 2019)</span></div>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text">Giữa City Road & Darlington Road</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text" style="color:var(--navy);font-weight:600;">Từ $395/tuần</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">Abercrombie Building</div>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text">Studio tự nấu, trung tâm Sydney, gần cafes & shops</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text" style="color:var(--navy);font-weight:600;">Từ $515/tuần</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">Kensington Apartment (UniLodge)</div>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text">Studio / twin / premium / multishare</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text" style="color:var(--navy);font-weight:600;">Từ $576/tuần (twin share)</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">Sydney University Village (SUV)</div>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text">Studio đến 5 phòng ngủ, tự nấu — đăng ký sớm</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text" style="color:var(--navy);font-weight:600;">Từ $497/tuần</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <h3 style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:12px;">Khu vực off-campus phổ biến</h3>
+      <div class="suburb-grid">
+        <div class="suburb-col">
+          <div class="suburb-col-title">Inner City</div>
+          <div class="suburb-list">
+            <div class="suburb-tag">Darlington</div>
+            <div class="suburb-tag">Chippendale</div>
+            <div class="suburb-tag">Ultimo</div>
+            <div class="suburb-tag">Pyrmont</div>
+          </div>
+        </div>
+        <div class="suburb-col">
+          <div class="suburb-col-title">Inner South</div>
+          <div class="suburb-list">
+            <div class="suburb-tag">Redfern</div>
+            <div class="suburb-tag">Waterloo</div>
+            <div class="suburb-tag">Alexandria</div>
+            <div class="suburb-tag">Erskineville</div>
+            <div class="suburb-tag">Newtown ⭐</div>
+          </div>
+        </div>
+        <div class="suburb-col">
+          <div class="suburb-col-title">Inner West</div>
+          <div class="suburb-list">
+            <div class="suburb-tag">Glebe ⭐</div>
+            <div class="suburb-tag">Annandale</div>
+            <div class="suburb-tag">Leichhardt</div>
+            <div class="suburb-tag">Stanmore</div>
+            <div class="suburb-tag">Marrickville</div>
+          </div>
+        </div>
+        <div class="suburb-col">
+          <div class="suburb-col-title">Western</div>
+          <div class="suburb-list">
+            <div class="suburb-tag">Auburn</div>
+            <div class="suburb-tag">Parramatta</div>
+            <div class="suburb-tag">Blacktown</div>
+          </div>
+        </div>
+        <div class="suburb-col">
+          <div class="suburb-col-title">Southern</div>
+          <div class="suburb-list">
+            <div class="suburb-tag">Hurstville</div>
+            <div class="suburb-tag">Rockdale</div>
+            <div class="suburb-tag">Kogarah</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-info" style="margin-top:14px;">
+        <span class="alert-icon">💡</span>
+        <div class="alert-text">Càng gần campus → giá thuê cao hơn nhưng tiết kiệm đi lại. Cân bằng giữa giá thuê, thời gian di chuyển và chất lượng sinh hoạt. Off-campus Housing DB: <a href="https://sydney.studystays.com.au" target="_blank">sydney.studystays.com.au</a></div>
+      </div>
+    </div>
+
+    <div class="section" id="family">
+      <div class="section-header">
+        <div class="section-icon" style="background:var(--usyd-orange-pale);">👨‍👩‍👧</div>
+        <h2 class="section-title">Đưa gia đình theo</h2>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <span class="badge badge-usyd-orange">Khuyến nghị của DFAT</span>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text">Đợi ít nhất <strong>6 tháng</strong> trước khi đưa gia đình sang</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Cho thời gian ổn định, tìm chỗ ở, hoàn thành IAP và enrol khoá học</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Nhiều sinh viên báo cáo mức <strong>stress cao hơn</strong> khi gia đình đến ngay từ đầu</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Không có hỗ trợ tài chính từ trường hay chính phủ Úc cho người thân</div></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="badge badge-navy">Trẻ đi học — NSW</span>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text">Trường công NSW <strong>miễn phí</strong> cho con của AAS scholars</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Đăng ký với <strong>NSW DEI</strong> (Temporary Residents Program) trước khi xin visa</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Không cần CoE — thay bằng bản sao <strong>hợp đồng DFAT</strong></div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Nộp đơn sớm vì xét duyệt mất thời gian: <a href="https://www.deinternational.nsw.edu.au" target="_blank">deinternational.nsw.edu.au</a></div></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="badge badge-red">Trẻ nhỏ — Nhà trẻ</span>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text">Nhà trẻ ở Úc rất <strong>đắt đỏ và khó đặt chỗ</strong></div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Đăng ký ở <strong>nhiều trung tâm</strong>, càng sớm càng tốt, trước khi trẻ đến</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Tham khảo: <a href="https://www.careforkids.com.au" target="_blank">careforkids.com.au</a> | <a href="https://www.mychild.gov.au" target="_blank">mychild.gov.au</a></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="campus">
+      <div class="section-header">
+        <div class="section-icon" style="background:#eef4fb;">🏛️</div>
+        <h2 class="section-title">Campus & Chương trình IAP</h2>
+      </div>
+
+      <div class="cards cards-2" style="margin-bottom:18px;">
+        <div class="card">
+          <div class="card-title">📍 Camperdown/Darlington (Campus chính)</div>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text">Nơi học tập của hầu hết học giả AAS. Có thể tham khảo campus cụ thể của ngành mình theo dõi trong Offer Letter.</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Cách trung tâm Sydney vài phút bằng phương tiện công cộng</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Gần ga tàu Central & Redfern, nhiều tuyến bus</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">🎓 IAP — Bắt buộc với tất cả scholars</div>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text"><strong>Orientation:</strong> 29–30/06/2026 (2 ngày)</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text"><strong>ASAS:</strong> 01/07 – 24/07/2026 (4 tuần, cường độ cao)</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Lịch đầy đủ nhận tại Arrival Information Session</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <span class="badge badge-teal">Australia Awards Orientation</span>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text">Giới thiệu dịch vụ & chính sách của trường</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Thông tin về điều kiện & quyền lợi học bổng</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Gặp gỡ Faculty, sinh viên khác và staff đại học</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <span class="badge badge-navy">ASAS (CET)</span>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text">Viết học thuật nâng cao & tư duy phản biện</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Kỹ năng đọc, thuyết trình, làm việc nhóm</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Kỹ năng IT và sử dụng công nghệ trong học tập</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Do Centre for English Teaching (CET) tổ chức</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <span class="badge badge-usyd-orange">PCE / Foundation (nếu có)</span>
+          <div class="item-list">
+            <div class="item"><div class="item-dot"></div><div class="item-text">PCE: học tại <strong>CET</strong> — Level 5, Wentworth Building (G1), Darlington</div></div>
+            <div class="item"><div class="item-dot"></div><div class="item-text">Foundation: học tại <strong>Taylors College</strong> — 965 Bourke St, Waterloo (~10 phút từ campus)</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="documents">
+      <div class="section-header">
+        <div class="section-icon" style="background:var(--red-light);">📄</div>
+        <h2 class="section-title">Hồ sơ & Tài liệu</h2>
+      </div>
+
+      <div class="card" style="max-width:680px;">
+        <div class="item-list">
+          <div class="item"><div class="item-dot"></div><div class="item-text">Trường có thể yêu cầu <strong>bản gốc hoặc bản công chứng</strong> hồ sơ học vấn bất kỳ lúc nào</div></div>
+          <div class="item"><div class="item-dot"></div><div class="item-text">Kiểm tra ngẫu nhiên <strong>mỗi semester</strong> — nên mang theo hồ sơ gốc sang Sydney</div></div>
+          <div class="item"><div class="item-dot"></div><div class="item-text">Nếu được chọn kiểm tra mà không có hồ sơ, trường sẽ báo trước để chuyển phát nhanh từ nhà</div></div>
+          <div class="item"><div class="item-dot"></div><div class="item-text">Hồ sơ không phải tiếng Anh: cần dịch thuật bởi dịch giả công nhận (tổ chức chính phủ, Registrar, hoặc Education Agent được chỉ định)</div></div>
+        </div>
+        <div class="alert alert-danger" style="margin-top:12px;">
+          <span class="alert-icon">❌</span>
+          <div class="alert-text"><strong>Không cung cấp hồ sơ khi được yêu cầu, hồ sơ giả mạo, hoặc thông tin sai lệch</strong> → huỷ enrolment và học bổng.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="checklist">
+      <div class="section-header">
+        <div class="section-icon" style="background:var(--green-light);">✅</div>
+        <h2 class="section-title">Final Checklist</h2>
+      </div>
+
+      <div class="checklist" id="checklistEl">
+        <div class="check-item" onclick="toggleCheck(this)">
+          <div class="check-box">✓</div>
+          <div>
+            <div class="check-label">Điền Booking Spreadsheet trong email pre-departure</div>
+            <div class="check-sub">Xác nhận lịch bay, đặt đón sân bay và chỗ ở tạm</div>
+          </div>
+        </div>
+        <div class="check-item" onclick="toggleCheck(this)">
+          <div class="check-box">✓</div>
+          <div>
+            <div class="check-label">Thông báo ngay cho International Sponsorships nếu thay đổi lịch bay</div>
+            <div class="check-sub">Cecilia Faraizi: +61 403 659 884 | australiaawards@sydney.edu.au</div>
+          </div>
+        </div>
+        <div class="check-item" onclick="toggleCheck(this)">
+          <div class="check-box">✓</div>
+          <div>
+            <div class="check-label">Thông báo cho International Sponsorships nếu đến Sydney cùng gia đình</div>
+            <div class="check-sub">Cần cung cấp tài liệu cho visa người thân</div>
+          </div>
+        </div>
+        <div class="check-item" onclick="toggleCheck(this)">
+          <div class="check-box">✓</div>
+          <div>
+            <div class="check-label">Tham gia Facebook group "Australia Awards – University of Sydney"</div>
+            <div class="check-sub">Kết nối với sinh viên khác, chia sẻ kinh nghiệm chỗ ở và học tập</div>
+          </div>
+        </div>
+        <div class="check-item" onclick="toggleCheck(this)">
+          <div class="check-box">✓</div>
+          <div>
+            <div class="check-label">Chuẩn bị hồ sơ học vấn bản gốc hoặc công chứng</div>
+            <div class="check-sub">Xem chính sách hồ sơ của trường — có thể bị yêu cầu bất kỳ lúc nào</div>
+          </div>
+        </div>
+        <div class="check-item" onclick="toggleCheck(this)">
+          <div class="check-box">✓</div>
+          <div>
+            <div class="check-label">Dự buổi Arrival Information Session khi đến Sydney</div>
+            <div class="check-sub">Level 4, Jane Foss Russell Building — bắt buộc tham dự</div>
+          </div>
+        </div>
+        <div class="check-item" onclick="toggleCheck(this)">
+          <div class="check-box">✓</div>
+          <div>
+            <div class="check-label">Mang đủ tiền mặt AUD cho 1–3 tuần đầu</div>
+            <div class="check-sub">Stipend và Establishment Allowance có thể mất 1–3 tuần mới về tài khoản</div>
+          </div>
+        </div>
+        <div class="check-item" onclick="toggleCheck(this)">
+          <div class="check-box">✓</div>
+          <div>
+            <div class="check-label">Đăng ký nhà trẻ sớm nếu đưa trẻ nhỏ theo</div>
+            <div class="check-sub">Nhà trẻ tại Úc rất khó đặt — đăng ký nhiều nơi trước khi trẻ đến</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="contacts">
+      <div class="section-header">
+        <div class="section-icon" style="background:#eef4fb;">📞</div>
+        <h2 class="section-title">Liên hệ quan trọng</h2>
+      </div>
+
+      <div class="contact-cards">
+        <div class="contact-card primary">
+          <div class="contact-name">Ms Cecilia Faraizi</div>
+          <div class="contact-role">Sponsored Students Coordinator — Liên hệ khẩn cấp</div>
+          <div class="contact-row"><span class="contact-row-icon">📱</span> <span class="contact-text">+61 403 659 884</span></div>
+          <div class="contact-row"><span class="contact-row-icon">✉️</span> <span class="contact-text">australiaawards@sydney.edu.au</span></div>
+        </div>
+
+        <div class="contact-card usyd-orange">
+          <div class="contact-name">International Sponsorships</div>
+          <div class="contact-role">Liên hệ chung — T2 đến T6, 9AM–5PM</div>
+          <div class="contact-row"><span class="contact-row-icon">📞</span> <span class="contact-text">+61 2 8627 5449</span></div>
+          <div class="contact-row"><span class="contact-row-icon">✉️</span> <span class="contact-text">australiaawards@sydney.edu.au</span></div>
+          <div class="contact-row"><span class="contact-row-icon">🌐</span> <span class="contact-text"><a href="https://sydney.edu.au/students/australia-awards.html" target="_blank">sydney.edu.au/students/australia-awards</a></span></div>
+        </div>
+
+        <div class="contact-card teal">
+          <div class="contact-name">2Airport — Đón sân bay</div>
+          <div class="contact-role">Dịch vụ đón xe từ sân bay Sydney</div>
+          <div class="contact-row"><span class="contact-row-icon">📞</span> <span class="contact-text">0455 800 800</span></div>
+          <div class="contact-row"><span class="contact-row-icon">✉️</span> <span class="contact-text">info@2airport.com.au</span></div>
+          <div class="contact-row"><span class="contact-row-icon">🌐</span> <span class="contact-text"><a href="https://www.2airport.com" target="_blank">2airport.com</a></span></div>
+        </div>
+
+        <div class="contact-card red">
+          <div class="contact-name">Queen Mary Building</div>
+          <div class="contact-role">On-campus accommodation</div>
+          <div class="contact-row"><span class="contact-row-icon">📞</span> <span class="contact-text">+61 2 9351 3322</span></div>
+          <div class="contact-row"><span class="contact-row-icon">✉️</span> <span class="contact-text">accommodation.info@sydney.edu.au</span></div>
+        </div>
+
+        <div class="contact-card primary">
+          <div class="contact-name">Ms Annie Dinh</div>
+          <div class="contact-role">Sponsored Students Officer</div>
+          <div class="contact-row"><span class="contact-row-icon">✉️</span> <span class="contact-text">australiaawards@sydney.edu.au</span></div>
+        </div>
+
+        <div class="contact-card usyd-orange">
+          <div class="contact-name">Ms Danielle Muir</div>
+          <div class="contact-role">Head of International Partnerships and Development</div>
+          <div class="contact-row"><span class="contact-row-icon">✉️</span> <span class="contact-text">australiaawards@sydney.edu.au</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div></main>
+
+<script>
+function toggleCheck(el) {
+  el.classList.toggle('checked');
+}
+
+const links = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('.section');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.id;
+      links.forEach(l => l.classList.remove('active'));
+      const active = document.querySelector(`.nav-link[href="#${id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+}, { threshold: 0.25 });
+
+sections.forEach(s => observer.observe(s));
+</script>
+
+</body>
+</html>
